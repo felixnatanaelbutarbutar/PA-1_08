@@ -1,0 +1,113 @@
+body {
+    background-color: #f0f0f0; /* Ubah warna background ke abu-abu muda */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-box {
+    width: 380px;
+    background-color: #ffffff; /* Tambahkan latar belakang putih ke kotak registrasi */
+    border-radius: 10px; /* Ubah radius sudut kotak menjadi 10px */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan lembut */
+}
+
+.register-box .card-body {
+    padding: 30px;
+}
+
+.register-box .form-control {
+    border-radius: 10px;
+}
+
+.register-box .mb-0 a {
+    color: #007bff;
+}
+
+.register-box .card-header {
+    background-color: #007bff; /* Ubah warna header menjadi biru */
+    color: #ffffff; /* Ubah warna teks header menjadi putih */
+    border-top-left-radius: 10px; /* Ubah radius sudut kiri atas header */
+    border-top-right-radius: 10px; /* Ubah radius sudut kanan atas header */
+}
+
+.register-box .card-header a {
+    color: #ffffff; /* Ubah warna teks tautan menjadi putih */
+}
+
+.register-box .card-header a:hover {
+    text-decoration: none; /* Hilangkan garis bawah saat tautan dihover */
+}
+
+.register-box .card-header a:focus {
+    text-decoration: none; /* Hilangkan garis bawah saat tautan difokuskan */
+}
+
+input {
+    padding: 10px; /* Menetapkan padding seragam */
+    border: 1px solid #ced4da; /* Menambahkan border */
+    border-radius: 5px; /* Membuat sudut input lebih melengkung */
+    font-size: 16px; /* Menyesuaikan ukuran font */
+    width: 100%; /* Menyesuaikan lebar input */
+    box-sizing: border-box; /* Menyesuaikan box model agar padding tidak mempengaruhi lebar input */
+    margin-bottom: 10px;
+}
+
+span{
+    padding: 10px;
+}
+
+/* Stil untuk input yang berada di dalam class form-control */
+.form-control input {
+    width: auto; /* Mengembalikan lebar input ke ukuran default */
+}
+
+.register-box .col-4 {
+    display: flex;
+    justify-content: center; /* Memposisikan tombol di tengah */
+}
+
+.register-box .btn-primary {
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #28a745; /* Warna hijau */
+    border-color: #28a745; /* Warna border yang sesuai */
+}
+
+.register-box .btn-primary:hover {
+    background-color: #218838; /* Warna hijau sedikit lebih gelap saat dihover */
+    border-color: #1e7e34; /* Warna border yang sesuai saat dihover */
+}
+
+.register-box-msg {
+    font-size: 24px; /* Menyesuaikan ukuran font */
+    color: #333; /* Warna teks */
+    text-align: center; /* Posisi teks di tengah */
+    margin-bottom: 20px; /* Ruang bawah untuk memisahkan dengan elemen lain */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 1px; /* Spasi antar huruf */
+}
+
+.register-box-msg::before {
+    content: ""; /* Menambahkan teks tambahan sebelum pesan */
+    display: block; /* Menjadikan sebagai blok elemen */
+    width: 100%; /* Lebar penuh */
+    height: 1px; /* Ketebalan garis */
+    background-color: #007bff; /* Warna garis */
+    margin-bottom: 10px; /* Ruang bawah untuk memisahkan dengan pesan */
+}
+
+.register-box-msg::after {
+    content: ""; /* Menambahkan teks tambahan setelah pesan */
+    display: block; /* Menjadikan sebagai blok elemen */
+    width: 100%; /* Lebar penuh */
+    height: 1px; /* Ketebalan garis */
+    background-color: #007bff; /* Warna garis */
+    margin-top: 10px; /* Ruang atas untuk memisahkan dengan pesan */
+}
