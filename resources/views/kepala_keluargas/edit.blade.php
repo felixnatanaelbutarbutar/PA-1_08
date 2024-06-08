@@ -39,7 +39,6 @@
             <button type="submit" class="btn btn-primary">Simpan</button>
             <a href="{{ route('kepala_keluargas.index', $lingkungan->id) }}" class="btn btn-secondary">Batal</a>
         </form>
-    </div>
 </div>
 @endsection
 
