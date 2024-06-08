@@ -26,7 +26,7 @@
         <div class="col-md-4 mb-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">{{ $anggotaKeluarga->nama }}</h5>
+                    <h5 class="text-center mb-4" style="font-family: 'Rowdies', cursive;">{{ $anggotaKeluarga->nama }}</h5>
                     <p class="card-text">Tanggal Lahir:<strong> {{ $anggotaKeluarga->tanggallahir  }}</strong></p>
                     <p class="card-text">Umur:<strong> {{ \Carbon\Carbon::parse($anggotaKeluarga->tanggallahir)->age }}</strong></p>
                     <p class="card-text">Jenis Kelamin:<strong> {{ $anggotaKeluarga->jeniskelamin }}</strong></p>
