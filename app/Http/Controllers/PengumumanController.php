@@ -36,7 +36,7 @@ class PengumumanController extends Controller
             'keterangan.max'=> ' Keterangan maksimal 200 karakter',
             'photo.required' => 'Photo Tidak boleh Kosong', 
             'tanggal.required' => 'tanggal Tidak boleh Kosong', 
-            'photo.mimes'=> 'Photo tidak dapat digunakan',    
+            'photo.mimes'=> 'Photo tidak dapat digunakan',  
         ]);
 
         $photo = $request->file('photo');
@@ -49,6 +49,7 @@ class PengumumanController extends Controller
 
         Pengumuman::insert([
             'judul' =>  $request->judul,
+            'id_user' => Auth::id(), // Adding id_user field here
             'keterangan' => $request->keterangan,
             'photo' => $image,
             'tanggal' => $request->tanggal,

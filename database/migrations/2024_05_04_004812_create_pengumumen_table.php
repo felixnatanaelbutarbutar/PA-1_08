@@ -15,11 +15,15 @@ class CreatePengumumenTable extends Migration
     {
         Schema::create('pengumumen', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_user'); // Menggunakan unsignedBigInteger untuk menyelaraskan dengan bigIncrements
             $table->string('judul');
             $table->string('keterangan');
             $table->date('tanggal');
             $table->string('photo');
             $table->timestamps();
+
+            $table->foreign('id_user')->references('id_user')->on('users')->onDelete('cascade');
+
         });
     }
 

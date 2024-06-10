@@ -15,11 +15,15 @@ class CreateDonasisTable extends Migration
     {
         Schema::create('donasis', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_user'); // Menggunakan unsignedBigInteger untuk menyelaraskan dengan bigIncrements
             $table->date('tanggal');
             $table->string('jenis');
             $table->string('nama');
             $table->string('jumlah');
             $table->timestamps();
+
+            $table->foreign('id_user')->references('id_user')->on('users')->onDelete('cascade');
+
         });
     }
 
