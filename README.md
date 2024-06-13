@@ -1,4 +1,4 @@
-![Logo](public/hero-carousel/gereja.jpg)
+![HKBP PEANAJAGAR](public/assets/img/hero-carousel/gereja.jpg)
 
 # Proyek Akhir 1 - Manajemen Data Jemaat HKBP Peanajagar
 **Deskripsi Proyek**
