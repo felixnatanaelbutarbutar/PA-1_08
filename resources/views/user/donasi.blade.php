@@ -13,10 +13,10 @@ use Carbon\Carbon;
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url(assets/img/hero-carousel/gereja.jpg)">
         <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
-            <h2>Donasi</h2>
+            <h2>Hamauliateon/Donasi</h2>
             <ol>
                 <li><a href="/">Home</a></li>
-                <li><a href="/jadwalibadahh">Donasi</a></li>
+                <li><a href="/jadwalibadahh">Donasi/</a></li>
             </ol>
         </div>
     </div>
@@ -30,7 +30,7 @@ use Carbon\Carbon;
                         <th scope="col">No</th>
                         <th scope="col">Tanggal</th>
                         <th scope="col">Nama Pemberi</th>
-                        <th scope="col">Jenis Donasi</th>
+                        <th scope="col">Dasar Memberi</th>
                         <th scope="col">Jumlah</th>
                     </tr>
                 </thead>

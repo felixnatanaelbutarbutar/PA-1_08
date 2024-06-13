@@ -17,11 +17,19 @@ class JadwalibadahController extends Controller
         return view('admin.tambahjadwal');
     }
     public function insertjadwal(Request $request){
-     
-        jadwalibadah::create($request->all());
-        return redirect()->route('jadwalibadah')->with('success','Data Berhasil ditambahkan');
+    // Mendapatkan id pengguna yang saat ini masuk
+    $id_user = auth()->id();
 
-    }
+    // Menyisipkan nilai id_user ke dalam request data
+    $requestData = $request->all();
+    $requestData['id_user'] = $id_user;
+
+    // Menyimpan data ke dalam tabel jadwalibadahs
+    jadwalibadah::create($requestData);
+
+    return redirect()->route('jadwalibadah')->with('success','Data Berhasil ditambahkan');
+}
+
     public function tampilkanjadwal($id){
         $data = jadwalibadah::find($id);
         //dd($data);

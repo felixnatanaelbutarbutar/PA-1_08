@@ -10,9 +10,13 @@ class CreateLingkungansTable extends Migration
     {
         Schema::create('lingkungans', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_lingkungan');
             $table->string('nama');
             // Tambahkan kolom lain yang diperlukan di sini
             $table->timestamps();
+
+            $table->foreign('id_user')->references('id_user')->on('users')->onDelete('cascade');
+
         });
     }
 

@@ -61,9 +61,8 @@
         {{-- <li class="nav-item d-none d-sm-inline-block">
           <a href="index3.html" class="nav-link">Home</a>
         </li> --}}
-        {{-- <li class="nav-item d-none d-sm-inline-block">
-          <a href="https://api.whatsapp.com/send?phone=6281369284351" class="nav-link">Kirim Pesan Ke Developer</a>
-        </li> --}}
+        <h1>HKBP PEANAJAGAR</h1>
+
     </ul>
 
 
@@ -84,15 +83,15 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    {{-- <a href="index3.html" class="brand-link">
-      <img src="{{ asset('admin/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a> --}}
+     <a href="index3.html" class="brand-link">
+      <img src="{{ asset('assets/img/gereja/logo1.png') }}" alt="HKBP Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">ADMIN HKBP</span>
+    </a> 
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="{{ asset('assets/img/gereja/logo.jpg') }}" class="img-circle elevation-2" alt="User Image">
         </div>
@@ -100,7 +99,7 @@
       <div class="info">
         <a href="#" class="d-block">ADMIN HKBP</a>
       </div>
-      </div>
+      </div> -->
       <!-- SidebarSearch Form -->
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
@@ -127,7 +126,6 @@
               </p>
             </a>
           </li>
-          {{-- <li class="nav-header">Tambah Data</li> --}}
               <li class="nav-item">
                 <a href="/lingkungans/index" class="nav-link">
                    <i class="nav-icon fas fa-id-card"></i>
@@ -141,7 +139,6 @@
                   <p>Pengumuman Jemaat</p>
                 </a>
               </li>
-          {{-- <li class="nav-header">Tambah Data</li> --}}
 
               <li class="nav-item">
                 <a href="/jadwalibadah" class="nav-link">
@@ -149,7 +146,6 @@
                   <p>Jadwal Ibadah</p>
                 </a>
               </li>
-          {{-- <li class="nav-header">Tambah Data</li> --}}
 
               <li class="nav-item">
                 <a href="/keuangan" class="nav-link">
@@ -157,7 +153,6 @@
                     <p>Informasi Keuangan</p>
                   </a>
               </li>
-          {{-- <li class="nav-header">Tambah Data</li> --}}
 
                 <li class="nav-item">
                   <a href="/donasi" class="nav-link">
