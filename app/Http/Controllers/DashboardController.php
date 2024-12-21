@@ -8,6 +8,6 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('user.dashboard'); // Ganti 'user.dashboard' dengan nama view Anda
+        return view('user.dashboard'); 
     }
 }

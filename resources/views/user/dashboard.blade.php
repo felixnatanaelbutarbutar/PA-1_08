@@ -96,7 +96,7 @@ font-family:'Dosis', sans-serif;
             </ul>
           </li>
             <li><a href="/photoo">Galeri </a></li>
-            <li><div class="login"><a href="/login">Login</a></div></li>
+            <!-- <li><div class="login"><a href="/login">Login</a></div></li> -->
             
           </ul>
         </nav>
@@ -175,7 +175,7 @@ font-family:'Dosis', sans-serif;
 
         <div class="section-heading">
           <h2>Visi & Misi <em>Gereja</em></h2>
-          {{-- <p>Berikut adalah deskripsi gereja GPDI Porsea</p> --}}
+          <!-- <p>Berikut adalah deskripsi gereja HKBP Peanajagar</p>  -->
         </div>
         <br>
         <ul class="nav nav-tabs row  g-2 d-flex">

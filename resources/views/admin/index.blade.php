@@ -108,6 +108,13 @@
                 <p>Data Jemaat</p>
               </a>
             </li>
+
+            <li class="nav-item">
+              <a href="/pengurus" class="nav-link">
+                <i class="nav-icon fas fa-id-card"></i>
+                <p>Pengurus</p>
+              </a>
+            </li>
             {{-- <li class="nav-header">Tambah Data</li> --}}
             <li class="nav-item">
               <a href="/pengumumanjemaat" class="nav-link">

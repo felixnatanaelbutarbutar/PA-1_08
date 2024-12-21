@@ -12,6 +12,8 @@ use App\Http\Controllers\LingkunganController;
 use App\Http\Controllers\KepalaKeluargaController;
 use App\Http\Controllers\AnggotaKeluargaController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PengurusController;
+
 
 
 
@@ -114,7 +116,6 @@ Route::get('/lingkungans/index', [LingkunganController::class, 'index']);
 Route::get('/lingkungans/{id}', [LingkunganController::class, 'show'])->name('lingkungans.show');
 Route::post('/lingkungans/search', [LingkunganController::class, 'search']);
 
-Route::get('/lingkungans/index', [LingkunganController::class, 'index']);
 Route::get('/lingkungans/{lingkungan}/kepala_keluargas', [KepalaKeluargaController::class, 'index'])->name('kepala_keluargas.index');
 Route::get('/lingkungans/{lingkungan}/kepala_keluargas/create', [KepalaKeluargaController::class, 'create'])->name('kepala_keluargas.create');
 // Route::post('/lingkungans/{lingkungan}/kepala_keluargas', [KepalaKeluargaController::class, 'store'])->name('kepala_keluargas.store');
@@ -157,3 +158,16 @@ Route::get('/lingkungan/{id}/kepalaKeluarga', [UserController::class, 'kepalaKel
 
 // Route untuk user melihat anggota keluarga berdasarkan kepala keluarga
 Route::get('/kepalaKeluarga/{id}/anggotaKeluarga', [UserController::class, 'anggotaKeluarga'])->name('user.anggotaKeluarga');
+
+
+
+//Pengurus
+
+Route::middleware(['auth'])->group(function() {
+    Route::get('/pengurus', [PengurusController::class, 'index'])->name('pengurus.index');
+    Route::get('/createpengurus', [PengurusController::class, 'create'])->name('pengurus.create');
+    Route::post('/pengurus', [PengurusController::class, 'store'])->name('pengurus.store');
+    Route::get('/pengurus/{id}/edit', [PengurusController::class, 'edit'])->name('pengurus.edit');
+    Route::post('/admin/pengurus/{id}', [PengurusController::class, 'update'])->name('pengurus.update');
+    Route::delete('pengurus/{id}', [PengurusController::class, 'destroy'])->name('pengurus.destroy');
+});
